@@ -1,13 +1,10 @@
 import model.Conn;
+import ui.Menu;
 
 import java.sql.Connection;
 
 public class Main {
     public static void main(String[] args){
-        try(Connection cnx = Conn.getConnection()){
-
-        }catch(Exception e){
-            System.out.println(e);
-        }
+        Menu.showMenu();
     }
 }
